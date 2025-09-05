@@ -7,11 +7,14 @@ import brasCubasImg from './assets/bras_cubas.jpeg';
 import BotoesControle from './BotoesControle.jsx';
 import livro from './assets/capitulos/livro.js';
 import Capa from './Capa.jsx';
+import ContainerProgresso from './ContainerProgresso.jsx';
 
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [faixaAtual, setFaixaAtual] = useState(0);
+  const [tempoAtualFaixa, setTempoAtualFaixa] = useState(0);
+  const [tempoTotalFaixa, setTempoTotalFaixa] = useState(0);
   const tagAudio = useRef(null);
 
   useEffect(() => {
@@ -85,6 +88,12 @@ function App() {
       <GerenciadorFaixa
         faixa={informacoesLivro.capitulos[faixaAtual]}
         referencia={tagAudio}
+        setTempoAtualFaixa={setTempoAtualFaixa}
+        setTempoTotalFaixa={setTempoTotalFaixa}
+      />
+      <ContainerProgresso
+        tempoAtualFaixa={tempoAtualFaixa}
+        tempoTotalFaixa={tempoTotalFaixa}
       />
   	  <BotoesControle
         isPlaying={isPlaying}
