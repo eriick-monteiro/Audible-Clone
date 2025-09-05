@@ -16,6 +16,7 @@ function App() {
   const [tempoAtualFaixa, setTempoAtualFaixa] = useState(0);
   const [tempoTotalFaixa, setTempoTotalFaixa] = useState(0);
   const tagAudio = useRef(null);
+  const barraProgresso = useRef(null);
 
   useEffect(() => {
     if (isPlaying) {
@@ -77,6 +78,13 @@ function App() {
     tagAudio.current.currentTime -= 15;
   }
 
+  const avancarPara = (evento) => {
+    const largura = barraProgresso.current.clientWidth;
+    const novoTempo = (evento.nativeEvent.offsetX / largura) * tempoTotalFaixa;
+    
+    tagAudio.current.currentTime = novoTempo;
+  }
+
   return (
     <>
       <Capa
@@ -94,6 +102,8 @@ function App() {
       <ContainerProgresso
         tempoAtualFaixa={tempoAtualFaixa}
         tempoTotalFaixa={tempoTotalFaixa}
+        referencia={barraProgresso}
+        avancarPara={avancarPara}
       />
   	  <BotoesControle
         isPlaying={isPlaying}
