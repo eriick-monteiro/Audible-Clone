@@ -85,7 +85,7 @@ npm run preview
 ├── 📦 package-lock.json
 ├── 📦 package.json
 ├── 📖 README.md
-└── :zap: vite.config.js
+└── ⚡ vite.config.js
 ```
 
 ### 📸 Preview
