@@ -58,6 +58,7 @@ npm run preview
 ```
 
 ### 📂 Estrutura do projeto
+```
 Audible-Clone/
 ├── public/
 │   └── index.html
@@ -69,6 +70,7 @@ Audible-Clone/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
 ### 📸 Preview
 ![alt text](image.png)
