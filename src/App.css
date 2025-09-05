@@ -33,6 +33,10 @@
   align-items: center;
 }
 
+.invert {
+  transform: scaleX(-1);
+}
+
 .capa {
   margin-top: 20dvh;
   object-fit: contain;
