@@ -59,17 +59,33 @@ npm run preview
 
 ### 📂 Estrutura do projeto
 ```
-Audible-Clone/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/        # Imagens e ícones
-│   ├── components/    # Componentes React
-│   ├── App.jsx
-│   └── main.jsx
-├── package.json
-├── vite.config.js
-└── README.md
+📂 Audible-Clone/
+├── 📂 public/
+│   └── 🎨 vite.svg
+├── 📂 src/
+│   ├── 📂 assets/        # Imagens e ícones
+│   │   ├── 📂 capitulos/
+│   │   │   ├── 🎵 01.mp3
+│   │   │   └── 🎵 02.mp3
+│   │   ├── 🖼️ bras_cubas.jpeg
+│   │   └── ⚛️ react.svg
+│   ├── 🎨 App.css
+│   ├── ⚛️ App.jsx
+│   ├── 🎛️ BotoesControle.jsx
+│   ├── 🎵 Capa.jsx
+│   ├── 📊 ContainerProgresso.jsx
+│   ├── 🎼 GerenciadorFaixa.jsx
+│   ├── 🎨 index.css
+│   ├── 🚀 main.jsx
+│   └── 🎚️ SeletorCapitulos.jsx
+├── 🙈 .gitignore
+├── 🛠️ eslint.config.js
+├── 🖼️ image.png
+├── 🌐 index.html
+├── 📦 package-lock.json
+├── 📦 package.json
+├── 📖 README.md
+└── :zap: vite.config.js
 ```
 
 ### 📸 Preview
